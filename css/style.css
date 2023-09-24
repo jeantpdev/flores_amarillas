@@ -12,6 +12,8 @@ body{
     justify-content: center;
     background-color: rgb(17, 17, 17);
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 .greetings{
     font-size: 10vw;
@@ -20,28 +22,21 @@ body{
 .greetings > span{
     animation: glow 2.5s ease-in-out infinite;
 }
-@keyframes glow{
-    0%, 100%{
-        color: #fff;
-        text-shadow: 0 0 12px #fbff00, 0 0 50px #fbff00, 0 0 100px #fbff00;
-    }
-    10%, 90%{
-        color: #696565;
-        text-shadow: none;
-    }
+
+.texto_sarita{
+    font-size: 7vw;
 }
-.greetings > span:nth-child(2){
-    animation-delay: .2s ;
+
+.regalo{
+    transition: 0.8s linear 1s;
 }
-.greetings > span:nth-child(3){
-    animation-delay: .4s ;
+
+.espero{
+    transition: 0.8s linear 2s;
+
 }
-.greetings > span:nth-child(4){
-    animation-delay: .6s;
-}
-.greetings > span:nth-child(5){
-    animation-delay: .8s;
-}
+
+  
 
 .description{
     text-align: center;
@@ -55,10 +50,8 @@ body{
     color: #111;
 }
 
-
-
 .description{
-    color: #fbff00;
+    color: white;
 }
 
 /* Estilo para el botón */
@@ -82,11 +75,15 @@ body{
   
   /* Efecto de resplandor al pasar el cursor sobre el botón */
   .button button:hover {
-    background-color: orange; /* Cambia el color de fondo al pasar el mouse a naranja */
     box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; /* Efecto de resplandor amarillo */
   }
   
   @media screen and (max-width:600px){
+
+    .texto_sarita{
+        font-size: 15vw;
+    }
+
     .greetings{
         display: block;
         font-size: 20vw;
@@ -94,11 +91,11 @@ body{
         text-align: center;
     }
     .description{
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     .button button a {
-        font-size: 5vw; /* Tamaño de fuente */
+        font-size: 6vw; /* Tamaño de fuente */
         font-weight: 100;
       }
 }
